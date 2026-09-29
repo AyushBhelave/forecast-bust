@@ -1,0 +1,33 @@
+{
+  "project": "AI-Based Forecast Bust Detection",
+  "model": "LightGBM",
+  "domain": {
+    "latitude": "18-28N",
+    "longitude": "75-90E"
+  },
+  "forecast_horizon": "Day 1-10",
+  "training_runs": [
+    "2019061500",
+    "2019070100",
+    "2019080100"
+  ],
+  "test_run": "2019090100",
+  "metrics": {
+    "roc_auc": 0.7816,
+    "pr_auc": 0.3271,
+    "brier_score": 0.1534,
+    "precision": 0.2133,
+    "recall": 0.6409,
+    "f1": 0.32
+  },
+  "features": [
+    "forecast_rain_mm",
+    "forecast_change_mm",
+    "spatial_gradient",
+    "lead_day",
+    "latitude",
+    "longitude"
+  ],
+  "confidence_note": "Prototype confidence; probabilities are not calibrated.",
+  "prototype_note": "Historical replay proof-of-concept."
+}

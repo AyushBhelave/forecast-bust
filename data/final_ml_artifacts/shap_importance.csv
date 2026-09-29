@@ -1,0 +1,7 @@
+feature,mean_abs_shap
+lead_day,0.5886924471517347
+forecast_rain_mm,0.5469448339031833
+longitude,0.4098603498064761
+latitude,0.3855222069630496
+spatial_gradient,0.3701935859609449
+forecast_change_mm,0.2850564413394919
